@@ -100,6 +100,10 @@
             top: 0;
 
         }
+.ButtonContainer a {
+    color: var(--ButtonColor);
+ }
+
 
         @media (max-width: 500px) {
             .ButtonContainer {
@@ -314,7 +318,12 @@
         }
 
         .widthAdaptive {
-            max-width: var(--VidoeSize);
+            display: block;           /* ensure block-level */
+    max-width: var(--VidoeSize); /* your existing max-width */
+    width: fit-content;       /* shrink to content */
+    margin: 0 auto;           /* center the block itself */
+    text-align: center;       /* optional, center text inside the p */
+            
         }
 
         .back-button svg path {
