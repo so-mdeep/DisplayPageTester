@@ -318,6 +318,12 @@
             line-height: 1;
         }
 
+                @media (max-width: 350px) {
+          .BackHomeMobile p {
+            font-size: 16px;
+          }
+        }
+
         .widthAdaptive {
             display: block;           /* ensure block-level */
     max-width: var(--VidoeSize); /* your existing max-width */
@@ -334,3 +340,4 @@
 .back-button:hover svg path {
   fill: var(--Color-Accent) !important; /* Force hover color */
 }
+
